@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form
+    action="GET" 
+    style="background-color: gainsboro;
+    text-align: center;
+    padding: 3%;
+    width: 30%;"
+    novalidate
+    target="_blank">
+        <div>
+            <h1>
+                مرحبا بعودتك Sign Up 
+            </h1>
+            <p>
+               <q>
+                    <b>They must create an account</b>
+               </q>
+            </p>
+        </div>
+
+        <label for="First Name">First Name</label> <br>
+        <input 
+        type="First Name" 
+        name="Farst Name" 
+        placeholder="First Name"
+        required
+        autofocus>
+
+        <br>
+        <br>
+
+        <label for="Last Name">Last Name</label> <br>
+        <input 
+        type="Last Name" 
+        name="Last Name" 
+        placeholder="Last Name">
+
+        <br>
+        <br>
+
+        <label for="User Name">User Name</label> <br>
+        <input 
+        type="User Name" 
+        name="User Name" 
+        placeholder="User Name"
+        readonly
+        value="mostafa_ali2024"
+        disabled>
+
+        <br>
+        <br>
+
+        <label for="Email">Email</label> <br>
+        <input 
+        type="Email" 
+        name="Email" 
+        placeholder="Email"
+        required>
+
+        <br>
+        <br>
+
+        <label for="selected">Description</label>
+        <textarea
+            placeholder="Description"
+            name="Description"
+            id="selected"
+            cols="30" 
+            rows="10">
+        </textarea>
+
+        <label for="Your Password" >Your Password</label> <br>
+        <input 
+        type="password" 
+        name="Your Password" 
+        placeholder="Your Password"
+        required
+        minlength="8"
+        maxlength="20">
+
+        <br>
+        <br>
+        <hr>
+        
+        <label for="Upload">Upload</label>
+        <input id="Upload" type="file">
+
+        <br>
+        <br>
+        <hr>
+        
+        <label for="search">Search</label>
+        <input id="search" type="search">
+
+        <br>
+        <br>
+        <hr>
+        
+        <label for="url">Url</label>
+        <input id="url" type="url">
+
+        <br>
+        <br>
+        <hr>
+        
+        <label for="date">Date</label>
+        <input id="date" type="date">
+
+        <br>
+        <br>
+        <hr>
+        
+        <label for="month">Month</label>
+        <input id="month" type="month">
+
+        <br>
+        <br>
+        <hr>
+        
+        <label for="time">Time</label>
+        <input id="time" type="time">
+
+        <br>
+        <br>
+        <hr>
+
+        <label for="color">Color</label>
+        <input 
+        type="color" 
+        name="color" 
+        placeholder="color"
+        required>
+
+        <br>
+        <br>
+        <hr>
+
+        <label for="range">Range</label>
+        <input 
+        type="range" 
+        name="Range"
+        min="10" 
+        max="100"
+        step="10"
+        value="0"
+        required>
+
+        <br>
+        <br>
+        <hr>
+
+        <label for="range">Number</label>
+        <input 
+        type="number" 
+        name="number"
+        min="10" 
+        max="100"
+        step="10"
+        value="0"
+        required>
+
+        <br>
+        <br>
+        <hr>
+
+        <div>
+            <input
+            id="1"
+            type="radio"
+            name="Gender"
+            value="Male"
+            required>
+            <label for="1">Male</label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input
+            id="2"
+            type="radio"
+            name="Gender"
+            value="Female"
+            required>
+            <label for="2">Female</label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input
+            id="3"
+            type="radio"
+            name="Gender"
+            value="other"
+            required
+            checked>
+            <label for="3">Other</label>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <p>
+            <b>Select your favorite hobbies</b>
+        </p>
+
+        <div>
+            <input
+            id="4"
+            type="checkbox"
+            name="hobbies"
+            value="Acting"
+            required>
+            <label for="4">Acting</label>
+
+            <br>
+            <br>
+
+            <input
+            id="5"
+            type="checkbox"
+            name="hobbies"
+            value="Calligraphy"
+            required>
+            <label for="5">Calligraphy</label>
+
+        <br>
+        <br>
+
+            <input
+            id="6"
+            type="checkbox"
+            name="hobbies"
+            value="Drawing"
+            required>
+            <label for="6">Drawing</label>
+
+            <br>
+            <br>
+
+            <input
+            id="6"
+            type="checkbox"
+            name="hobbies"
+            value="Other"
+            required
+            checked>
+            <label for="6">Other</label>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <label for="country">Choose Country:</label>
+        <select name="country" id="country">
+            <optgroup label="South America">
+                <option value="Argentina">Argentina</option>
+                <option value="Brazil" selected>Brazil</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Suriname">Suriname</option>
+            </optgroup>
+            <optgroup label="Africa">
+                <option value="Egypt">Egypt</option>
+                <option value="Albania" >Albania</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Australia">Australia</option>
+            </optgroup>
+        </select>
+        
+        <br>
+        <br>
+        <hr>
+
+        <input list="programming" name="prog" >
+        <datalist id="programming">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JS">
+            <option value="C##">
+        </datalist>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <input
+        type="reset" 
+        name="reset"
+        required
+        style="background-color: rgb(226, 23, 36);
+        color: aliceblue;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-style: normal;"
+>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input
+        type="submit" 
+        name="submit" 
+        required
+        style="background-color: antiquewhite;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-style: normal;">
+
+    </form>
+
+    <code>
+        
+    </code>
+
+</body>
+</html><html>
+    
+</html>
